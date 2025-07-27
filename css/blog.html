@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.head{
+    background-color:  #333;
+    height: 40vh;
+}
+
+.blog-head{
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.img{
+    align-items: center;
+    text-align: center;
+}
+
+.main-img{
+    transform: translateY(-45%);
+    height: 350px;
+}
+.main-content{
+    transform: translateY(-80%);
+    font-size: 19px;
+    font-family: Arial, sans-serif;
+    width: 80%;
+    
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:700px){
+    .img{
+        width: 100%;
+    }
+
+    .head{
+        height: 18vh;
+        padding: 10px;
+    }
+
+    .main-img{
+        width: 100%;
+        transform: translateY(0%);
+    }
+
+    .main-content{
+        transform: translateY(0%);
+        text-align: justify;
+    }
+}
+
+    </style>
+    <div class="head">
+     <h1 class="blog-head">
+        Mastering Flexbox: A Complete Guide
+     </h1>
+    </div>
+    <div class="img">
+    <img class="main-img" src="../assets/1727766_3342.jpg">
+    </div>
+
+    <div class="content">
+        <p class="main-content">
+            What is Flexbox?
+Flexbox is a one-dimensional layout method for laying out items in rows or columns. Unlike traditional CSS layouts, Flexbox allows for better alignment and space distribution, without needing complicated hacks or complex float/grid systems.
+
+Flexbox consists of a flex container and flex items. The container holds the items, which automatically align themselves according to the rules applied to the container.
+Flexbox vs. CSS Grid
+While Flexbox is a powerful tool for one-dimensional layouts (either row or column), it’s not always the best solution for more complex, two-dimensional layouts (both rows and columns). In those cases, CSS Grid may be a better choice.
+
+Use Flexbox when:
+
+You need to align items along one axis (horizontal or vertical).
+You’re working with a small number of elements (like navigation bars or card layouts).
+Use Grid when:
+
+You need to control both rows and columns simultaneously.
+You’re building complex layouts like full-page grids or multi-column websites.
+       </p>
+    </div>
+
+</body>
+</html>
